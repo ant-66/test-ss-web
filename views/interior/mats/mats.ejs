@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Floor Mats - Sculpta Stratosit</title>
+  <link rel="stylesheet" href="/styles/subcategory.css" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <%- include("../../partials/header") %>
+
+  <header class="sub-header">
+    <h1 class="dm-serif-text-regular">Floor Mats</h1>
+    <p>Premium protection and style for your car floors</p>
+  </header>
+
+
+  <main class="sub-main">
+    <aside class="filters">
+      <h2>Filters</h2>
+
+      <div class="filter-group">
+        <h3>Price Range</h3>
+        <label><input type="checkbox"> Under ₹500</label>
+        <label><input type="checkbox"> ₹500 - ₹1000</label>
+        <label><input type="checkbox"> ₹1000 - ₹2000</label>
+        <label><input type="checkbox"> ₹2000+</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Material</h3>
+        <label><input type="checkbox"> Leather</label>
+        <label><input type="checkbox"> PU</label>
+        <label><input type="checkbox"> Velvet</label>
+        <label><input type="checkbox"> Canvas</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Colour</h3>
+        <label><input type="checkbox"> Black</label>
+        <label><input type="checkbox"> Beige</label>
+        <label><input type="checkbox"> Red</label>
+        <label><input type="checkbox"> Blue</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Availability</h3>
+        <label><input type="checkbox"> In Stock</label>
+        <label><input type="checkbox"> Out of Stock</label>
+      </div>
+    </aside>
+
+    <section class="products-section">
+      <div class="controls-bar">
+        <button class="mobile-filter-btn" onclick="openFilterPanel()">Filter</button>
+
+        <div class="sort-bar">
+          <label for="sort">Sort by:</label>
+          <select id="sort">
+            <option>Relevance</option>
+            <option>Featured</option>
+            <option>Popularity</option>
+            <option>Price, low to high</option>
+            <option>Price, high to low</option>
+            <option>Alphabetically, A-Z</option>
+            <option>Alphabetically, Z-A</option>
+            <option>Date, new to old</option>
+            <option>Date, old to new</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid roboto-condensed">
+          <div class="product-card">
+            <img src="/images/interior/mat_subcat/mat1.png" alt="Floor Mat">
+            <h4>Motor Trend 943-BG FlexTough Defender Car Floor Mat</h4>
+            <p>₹999</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/images/interior/mat_subcat/mat2.jpg" alt="Floor Mat">
+            <h4>Motor Trend 943-BK FlexTough Defender Car Floor Mat</h4>
+            <p>₹999</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/images/interior/mat_subcat/mat3.png" alt="Floor Mat">
+            <h4>BDK Proliner All Weather Rubber Auto Floor Mat & Cargo Liner</h4>
+            <p>₹799</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/images/interior/mat_subcat/mat4.png" alt="Floor Mat">
+            <h4>Motor Trend ChromeTech Car Floor Mats Full Set - Durable Rubber Floor Mat</h4>
+            <p>₹899</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/images/interior/mat_subcat/mat5.png" alt="Floor Mat">
+            <h4>Cat Detachable Deep Dish Car Floor Mat w/ Removable Carpet Liner</h4>
+            <p>₹999</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="/images/interior/mat_subcat/mat6.png" alt="Floor Mat">
+            <h4>IKON MOTORSPORTS, Custom Fit Floor Mat - All Season Carpet Liner</h4>
+            <p>₹899</p>
+            <button>Add to Cart</button>
+          </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-filter-panel" id="mobileFilterPanel">
+    <div class="mobile-filter-header">
+      <h2>Filters</h2>
+      <span class="material-icons close-icon" onclick="closeFilterPanel()">close</span>
+    </div>
+
+    <div class="mobile-filter-content">
+      <div class="filter-group">
+        <h3>Price Range</h3>
+        <label><input type="checkbox"> Under ₹500</label>
+        <label><input type="checkbox"> ₹500 - ₹1000</label>
+        <label><input type="checkbox"> ₹1000 - ₹2000</label>
+        <label><input type="checkbox"> ₹2000+</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Material</h3>
+        <label><input type="checkbox"> Leather</label>
+        <label><input type="checkbox"> PU</label>
+        <label><input type="checkbox"> Velvet</label>
+        <label><input type="checkbox"> Canvas</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Colour</h3>
+        <label><input type="checkbox"> Black</label>
+        <label><input type="checkbox"> Beige</label>
+        <label><input type="checkbox"> Red</label>
+        <label><input type="checkbox"> Blue</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Availability</h3>
+        <label><input type="checkbox"> In Stock</label>
+        <label><input type="checkbox"> Out of Stock</label>
+      </div>
+    </div>
+  </div>
+
+  <%- include("../../partials/footer") %>
+
+  <script>
+    function openFilterPanel() {
+      document.getElementById("mobileFilterPanel").classList.add("active");
+      document.getElementById("overlay").style.display = "block";
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeFilterPanel() {
+      document.getElementById("mobileFilterPanel").classList.remove("active");
+      document.getElementById("overlay").style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+  </script>
+
+  <div class="overlay" id="overlay" onclick="closeFilterPanel()"></div>
+
+</body>
+</html>

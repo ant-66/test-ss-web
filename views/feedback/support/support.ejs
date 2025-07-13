@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help Center - Sculpta Stratosit</title>
+  <link rel="stylesheet" href="/styles/support.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <%- include("../../partials/header") %>
+
+  
+  <header class="support-header">
+    <h1 class="dm-serif-text-regular">Help Center</h1>
+    <p>We’re here to help. Find answers to common questions or contact us directly.</p>
+  </header>
+
+  <main class="support-main">
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>How can I track my order?</h3>
+        <p>Log in to your profile, go to "My Orders" and click on the relevant order to see tracking updates.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I cancel or return an order?</h3>
+        <p>Yes, you can cancel/return orders from your order history page within the return window.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I change my delivery address?</h3>
+        <p>Address changes are allowed before dispatch. Visit your profile > My Orders > Edit Address.</p>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Contact Us</h2>
+      <form class="support-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="query">How can we help you?</label>
+        <textarea id="query" name="query" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <%- include("../../partials/footer") %>
+
+
+</body>
+</html>

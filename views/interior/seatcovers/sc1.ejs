@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skechers Memory Foam, Air Cool Mesh Thick Car Seat Cover</title>
+  <link rel="stylesheet" href="/styles/sc1.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <%- include("../../partials/header") %>
+
+  <main class="product-page">
+    <div class="gallery">
+      <ul class="thumbs">
+        <li><img src="/images/interior/sc_subcat/sc4.webp" alt="Image 1" /></li>
+        <li><img src="/images/interior/sc_subcat/sc_individual/img1.jpg" alt="Image 1" /></li>
+        <li><img src="/images/interior/sc_subcat/sc_individual/img2.jpg" alt="Image 2" /></li>
+        <li><img src="/images/interior/sc_subcat/sc_individual/img3.jpg" alt="Image 3" /></li>
+        <li><img src="/images/interior/sc_subcat/sc_individual/img4.jpg" alt="Image 4" /></li>
+      </ul>
+      <div class="main-image">
+        <img src="/images/interior/sc_subcat/sc4.webp" alt="Product Image" />
+      </div>
+    </div>
+
+    <div class="details">
+      <h1>Skechers Memory Foam, Air Cool Mesh Thick Car Seat Cover</h1>
+      <p class="store-link">Visit the Skechers Store</p>
+      <div class="rating">
+        ★★★★☆ <span>(1,007 ratings)</span>
+      </div>
+
+      <div class="colors">
+        <h4>Available Colors:</h4>
+        <ul>
+          <li class="color-swatch" style="background: #000;" data-img="/images/interior/sc_subcat/sc_individual/sc4_blk.jpg"></li>
+          <li class="color-swatch" style="background: #919192;" data-img="/images/interior/sc_subcat/sc_individual/sc4_grey.jpg"></li>
+          <li class="color-swatch" style="background: #f00;" data-img="/images/interior/sc_subcat/sc4.webp"></li>
+          <li class="color-swatch" style="background: #00f;" data-img="/images/interior/sc_subcat/sc_individual/sc4_blue.jpg"></li>
+        </ul>
+      </div>
+
+      <div class="purchase">
+        <label for="quantity">Quantity:</label>
+        <select id="quantity">
+          <option>1</option><option>2</option><option>3</option><option>4</option><!-- etc. -->
+        </select>
+        <div class="buttons">
+          <button class="add-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <section class="description">
+        <h2>Product Description</h2>
+        <ul>
+          <li>SKECHERS MEMORY FOAM(TM) - Skechers Memory Foam(TM) car seat cover provides the ultimate comfort in seat cover performance - contouring to your body and providing pressure relief.</li>
+          <li>LEATHER & AIR COOL MESH FABRIC - Stay cool and comfortable with our innovative Air Cool mesh fabric, which promotes airflow and reduces heat buildup, ensuring a refreshing ride no matter the weather.</li>
+          <li>FORM FITTING DESIGN - Skechers Slip-ins Car seat covers front seats use 3 Panel trim designed to fit most vehicles, including cars, trucks, vans and SUVs. If you are not sure if your vehicle is suitable for this cover, please contact us.</li>
+          <li>AIRBAG COMPATIBLE - Advanced stitching technology allows airbags to deploy through seat cover seams. Seat cover is compatible with all vehicle side airbags.</li>
+          <li>MATERIAL - Skechers Memory Foam(TM) with Leather & Air-Cool Mesh.</li>
+        </ul>
+      </section>
+
+      <section class="product-details">
+        <h2>Product Details</h2>
+        <table>
+          <tr><th>Brand</th><td>Skechers</td></tr>
+          <tr><th>Fit Type</th><td>Universal Fit</td></tr>
+          <tr><th>Color</th><td>Black and Red</td></tr>
+          <tr><th>Material</th><td>Leather / Rubber</td></tr>
+          <tr><th>Manufacturer</th><td>FREMONT AUTO</td></tr>
+          <tr><th>Has Seat Belt Accessibility</th><td>Yes</td></tr>
+          <tr><th>Special Feature</th><td>Skechers Memory Foam, Air Cool Mesh</td></tr>	
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const thumbs = document.querySelectorAll('.thumbs img');
+    const mainImg = document.querySelector('.main-image img');
+
+    thumbs.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+        mainImg.src = thumb.src;
+
+        thumbs.forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
+    });
+    });
+
+    if (thumbs[0]) thumbs[0].classList.add('active');
+
+
+    const colorSwatches = document.querySelectorAll('.color-swatch');
+
+    colorSwatches.forEach(swatch => {
+    swatch.addEventListener('click', () => {
+        const newSrc = swatch.getAttribute('data-img');
+        if (newSrc) {
+        mainImg.src = newSrc;
+
+        
+        colorSwatches.forEach(s => s.classList.remove('active'));
+        swatch.classList.add('active');
+        }
+    });
+    });
+
+  </script>
+
+  <%- include("../../partials/footer") %>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<header class="main-header">
+  <link rel="stylesheet" href="/styles/header.css" />
+  <div class="nav-container">
+
+    <div class="logo">
+      <a href="../home.ejs">
+        <img src="/images/logo_white.png" alt="Sculpta Stratosit Logo">
+      </a>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products, categories..." />
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+
+    <nav>
+    <ul class="nav-menu" id="navMenu">
+      <li>
+        <a href="/#category-section">Shop by Category</a>
+        <ul class="dropdown">
+          <li><a href="/category/type">Type</a></li>
+          <li><a href="/category/brand">Brand</a></li>
+          <li><a href="/category/material">Material</a></li>
+          <li><a href="/category/interior">Interior Accessories</a></li>
+          <li><a href="/category/exterior">Exterior Accessories</a></li>
+          <li><a href="/#category-section">More...</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Profile</a>
+        <ul class="dropdown">
+          <li><a href="#" onclick="openModal('loginModal')">Log In</a></li>
+          <li><a href="#" onclick="openModal('signupModal')">Sign Up</a></li>
+          <li><a href="#">My Orders</a></li>
+          <li><a href="#">Wishlist</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Feedback</a>
+        <ul class="dropdown">
+          <li><a href="/feedback/support/support">Support</a></li>
+          <li><a href="/feedback/about/about">About Us</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Cart</a>
+      </li>
+    </ul>
+  </nav>
+
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    if (hamburger && navMenu) {
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    }
+  });
+</script>
+
+
+
+</header>

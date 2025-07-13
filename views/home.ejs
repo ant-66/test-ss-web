@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sculpta Stratosit</title>
+  <link rel="stylesheet" href="/styles/home.css" />
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  
+  <!-- Font style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <%- include("partials/header") %>
+
+  <div>
+    <section class="hero-banner">
+        <img src="/images/banner.jpg" alt="Hero" class="hero-img" />
+    </section>
+  </div>
+
+  <!-- Shop by Category Section -->
+  <section id="category-section" class="category-section roboto-condensed">
+    <h2 class="dm-serif-text-regular">Shop by Category</h2>
+
+    <!-- Vehicle Type -->
+    <div class="category-row">
+      <h3><a href="./category/type">Type</a></h3>
+      <div class="category-scroll">
+        <div class="category-card" style="background-image: url('/images/type/suv.png');">SUV</div>
+        <div class="category-card" style="background-image: url('/images/type/sedan.jpg');">Sedan</div>
+        <div class="category-card" style="background-image: url('/images/type/hatchback.png');">Hatchback</div>
+        <div class="category-card" style="background-image: url('/images/type/truck.jpg');">Truck</div>
+        <div class="category-card" style="background-image: url('/images/type/van.avif');">Van/Minivan</div>
+        <div class="category-card" style="background-image: url('/images/type/coupe.jpg');">Coupe</div>
+        <div class="category-card" style="background-image: url('/images/type/convertible.jpg');">Convertible</div>
+        <a href="./category/type">
+          <div class="category-card" style="background-image: url('/images/type/sports.jpg');">More...</div>
+        </a>
+        
+
+      </div>
+    </div>
+
+    <!-- Vehicle Brand -->
+    <div class="category-row">
+      <h3><a href="./category/brand">Brand</a></h3>
+      <div class="category-scroll">
+        <div class="category-card" style="background-image: url('/images/brand/audi.jpg');">Audi</div>
+        <div class="category-card" style="background-image: url('/images/brand/bmw.jpg');">BMW</div>
+        <div class="category-card" style="background-image: url('/images/brand/mercedes.jpg');">Mercedes</div>
+        <div class="category-card" style="background-image: url('/images/brand/jaguar.jpg');">Jaguar</div>
+        <div class="category-card" style="background-image: url('/images/brand/honda.jpg');">Honda</div>
+        <div class="category-card" style="background-image: url('/images/brand/toyota.jpg');">Toyota</div>
+        <div class="category-card" style="background-image: url('/images/brand/kia.jpg');">KIA</div>
+        <a href="./category/brand">
+          <div class="category-card" style="background-image: url('/images/brand/renault.jpg');">More...</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Material -->
+    <div class="category-row">
+      <h3><a href="./category/material">Material</a></h3>
+      <div class="category-scroll">
+        <div class="category-card" style="background-image: url('/images/material/leather.jpg');">Leather</div>
+        <div class="category-card" style="background-image: url('/images/material/pu.jpg');">PU</div>
+        <div class="category-card" style="background-image: url('/images/material/canvas.jpg');">Canvas</div>
+        <div class="category-card" style="background-image: url('/images/material/neoprene.jpg');">Neoprene</div>
+        <div class="category-card" style="background-image: url('/images/material/vinyl.jpg');">PVC Vinyl</div>
+      </div>
+    </div>
+
+    <!-- Interior Accessories -->
+    <div class="category-row">
+      <h3><a href="./category/interior">Interior Accessories</a></h3>
+      <div class="category-scroll">
+        <a href="./interior/seatcovers/seatcovers">
+          <div class="category-card" style="background-image: url('/images/interior/seatcover.jpg');">Seat Cover</div>
+        </a>
+        
+        <a href="./interior/mats/mats">
+          <div class="category-card" style="background-image: url('/images/interior/mat.jpg');">Floor Mat</div>
+        </a>
+        
+        <div class="category-card" style="background-image: url('/images/interior/neckrest.jpg');">Neck Rest</div>
+        
+        <div class="category-card" style="background-image: url('/images/interior/armrest.jpg');">Armrest</div>
+        
+        <div class="category-card" style="background-image: url('/images/interior/dashboard.jpg');">Dashboard Cover</div>
+        
+        <div class="category-card" style="background-image: url('/images/interior/steeringwheel.jpg');">Steering Wheel Cover</div>
+        
+        <div class="category-card" style="background-image: url('/images/interior/mobileholder.jpg');">Mobile Holder/Mount</div>
+        
+        <a href="./category/interior">
+          <div class="category-card" style="background-image: url('/images/interior/organiser.jpg');">More...</div>
+        </a>
+        
+      </div>
+    </div>
+
+    <!-- Exterior Accessories -->
+    <div class="category-row">
+      <h3><a href="./category/exterior">Exterior Accessories</a></h3>
+      <div class="category-scroll">
+        <div class="category-card" style="background-image: url('/images/exterior/mudflap.jpg');">Mud Flaps</div>
+        <div class="category-card" style="background-image: url('/images/exterior/bumperguard.jpg');">Bumper Guard</div>
+        <div class="category-card" style="background-image: url('/images/exterior/rainguard.jpg');">Rain Guard</div>
+        <div class="category-card" style="background-image: url('/images/exterior/alloywheels.jpg');">Alloy Wheels</div>
+        <div class="category-card" style="background-image: url('/images/exterior/chrometrim.jpg');">Chrome Trims</div>
+        <div class="category-card" style="background-image: url('/images/exterior/roofrack.jpg');">Roof Rack</div>
+        <div class="category-card" style="background-image: url('/images/exterior/underbodylight.jpg');">LED Underbody Lights</div>
+        <a href="./category/exterior">
+          <div class="category-card" style="background-image: url('/images/exterior/screen.jpg');">More...</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Customer Reviews Section -->
+  <section class="review-section">
+    <h2 class="review-title dm-serif-text-regular">Be Our Judge</h2>
+    <div class="review-scroll">
+      <div class="review-card">
+        <h4 class="roboto-condensed">Priya R.</h4>
+        <p>★★★★★</p>
+        <p>"Great fit and comfort. Feels premium!"</p>
+      </div>
+      <div class="review-card">
+        <h4 class="roboto-condensed">Arjun M.</h4>
+        <p>★★★★☆</p>
+        <p>"Loved the material quality. Fast delivery."</p>
+      </div>
+      <div class="review-card">
+        <h4 class="roboto-condensed">Megha K.</h4>
+        <p>★★★★★</p>
+        <p>"Stylish and durable. Totally worth it!"</p>
+      </div>
+      <div class="review-card">
+        <h4 class="roboto-condensed">Ravi S.</h4>
+        <p>★★★☆☆</p>
+        <p>"Good product, but packaging could improve."</p>
+      </div>
+    </div>
+    <div class="review-button">
+      <a href="#" class="roboto-condensed">Leave a Review</a>
+    </div>
+  </section>
+
+  <%- include("partials/footer") %>
+
+  <!-- Login Popup Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-box">
+      <span class="close-btn" onclick="closeModal('loginModal')">&times;</span>
+      <h2>Log In</h2>
+      
+      <!-- Google Button -->
+      <button class="google-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google Icon">
+        Continue with Google
+      </button>
+
+      <div class="divider">or</div>
+
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="#" onclick="switchToSignup()">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Signup Popup Modal -->
+  <div class="modal-overlay" id="signupModal"> 
+    <div class="modal-box">
+      <span class="close-btn" onclick="closeModal('signupModal')">&times;</span>
+      <h2>Sign Up</h2>
+
+      <button class="google-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google Icon">
+        Sign Up with Google
+      </button>
+
+      <div class="divider">or</div>
+
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="switchToLogin()">Log In</a></p>
+      </form>
+    </div>
+  </div>
+
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    function switchToSignup() {
+      closeModal('loginModal');
+      openModal('signupModal');
+    }
+
+    function switchToLogin() {
+      closeModal('signupModal');
+      openModal('loginModal');
+    }
+
+    window.onclick = function(event) {
+      const login = document.getElementById('loginModal');
+      const signup = document.getElementById('signupModal');
+      if (event.target === login) login.style.display = 'none';
+      if (event.target === signup) signup.style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Category - Interior Accessories</title>
+  <link rel="stylesheet" href="/styles/category.css" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <%- include("../partials/header") %>
+
+  <section class="section-bg">
+    <div class="container">
+      <h1 class="page-title">Explore by Interior Accessories</h1>
+      <div class="grid">
+        <div class="category" onclick="location.href='../interior/seatcovers/seatcovers.ejs'" 
+        style="background-image: url('/images/interior/seatcover.jpg');">Seat Cover</div>
+        <div class="category" onclick="location.href='../interior/mats/mats.ejs'" 
+        style="background-image: url('/images/interior/mat.jpg');">Floor Mat</div>
+        <div class="category" style="background-image: url('/images/interior/neckrest.jpg');">Neck Rest</div>
+        <div class="category" style="background-image: url('/images/interior/armrest.jpg');">Arm Rest</div>
+        <div class="category" style="background-image: url('/images/interior/dashboard.jpg');">Dashboard Cover</div>
+        <div class="category" style="background-image: url('/images/interior/steeringwheel.jpg');">Steering Wheel Cover</div>
+        <div class="category" style="background-image: url('/images/interior/mobileholder.jpg');">Mobile Holder/Mount</div>
+        <div class="category" style="background-image: url('/images/interior/organiser.jpg');">Organiser</div>
+      </div>
+    </div>
+  </section>
+
+  <%- include("../partials/footer") %>
+
+</body>
+</html>
